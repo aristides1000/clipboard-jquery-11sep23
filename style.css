@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #f3f4f7;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body h1, body textarea, body button, body span {
+  font-family: inherit;
+}
+body .container {
+  width: 420px;
+  height: 530px;
+  padding: 25px;
+  background-color: #f3f4f7;
+  border-radius: 10px;
+  box-shadow: 0 0 25px 5px rgba(83, 87, 95, 0.25);
+}
+
+/*# sourceMappingURL=style.css.map */

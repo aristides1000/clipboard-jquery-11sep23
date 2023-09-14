@@ -68,7 +68,7 @@ body .container .copy-btn ion-icon {
 body .container .copy-btn :active {
   transform: scale(0.98);
 }
-body .container span .copied {
+body .container .copied {
   display: block;
   margin-top: 50px;
   text-align: center;
@@ -77,7 +77,7 @@ body .container span .copied {
   transform: scale(0);
   transition: bounceIn 0.8s linear;
 }
-body .container span .bounce-effect {
+body .container .bounce-effect {
   animation: bounceIn 0.8s linear;
 }
 body .container .d-none {

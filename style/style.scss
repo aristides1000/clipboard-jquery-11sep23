@@ -81,20 +81,18 @@ body {
       }
     }
 
-    span {
-      .copied {
-        display: block;
-        margin-top: 50px;
-        text-align: center;
-        font-size: 26px;
-        color: $fifth-color;
-        transform: scale(0);
-        transition: bounceIn 0.8s linear;
-      }
+    .copied {
+      display: block;
+      margin-top: 50px;
+      text-align: center;
+      font-size: 26px;
+      color: $fifth-color;
+      transform: scale(0);
+      transition: bounceIn 0.8s linear;
+    }
 
-      .bounce-effect {
-        animation: bounceIn 0.8s linear;
-      }
+    .bounce-effect {
+      animation: bounceIn 0.8s linear;
     }
 
     .d-none {

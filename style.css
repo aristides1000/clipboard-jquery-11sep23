@@ -14,9 +14,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-body h1, body textarea, body button, body span {
-  font-family: inherit;
-}
 body .container {
   width: 420px;
   height: 530px;
@@ -24,6 +21,90 @@ body .container {
   background-color: #f3f4f7;
   border-radius: 10px;
   box-shadow: 0 0 25px 5px rgba(83, 87, 95, 0.25);
+  /* BounceIn Animation */
+}
+body .container textarea, body .container button, body .container span {
+  font-family: inherit;
+}
+body .container h1 {
+  font-family: inherit;
+  padding: 20px 0;
+  color: #090909;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+body .container .text-field {
+  width: 100%;
+  height: 230px;
+  margin: 20px 0;
+  padding: 10px;
+  background: transparent;
+  border: 1px solid #52565e;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  resize: none;
+}
+body .container .copy-btn {
+  padding: 10px 15px;
+  color: #f3f4f7;
+  background-color: #037ef3;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+body .container .copy-btn ion-icon {
+  padding-left: 10%;
+  font-size: 1.5rem;
+}
+body .container .copy-btn :active {
+  transform: scale(0.98);
+}
+body .container span .copied {
+  display: block;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 26px;
+  color: #858585;
+  transform: scale(0);
+  transition: bounceIn 0.8s linear;
+}
+body .container span .bounce-effect {
+  animation: bounceIn 0.8s linear;
+}
+body .container .d-none {
+  display: none;
+}
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  20% {
+    transform: scale(1.1);
+  }
+  40% {
+    transform: scale(0.9);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.03);
+  }
+  80% {
+    transform: scale(0.97);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

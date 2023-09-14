@@ -68,9 +68,12 @@ body {
       border: none;
       outline: none;
       cursor: pointer;
+      display: flex;
+      align-items: center;
 
       ion-icon {
         padding-left: 10%;
+        font-size: 1.5rem;
       }
 
       :active {
@@ -100,7 +103,34 @@ body {
 
     /* BounceIn Animation */
 
+    @keyframes bounceIn {
+      0% {
+        opacity: 0;
+        transform: scale(0.3);
+      }
 
+      20% {
+        transform: scale(1.1);
+      }
+
+      40% {
+        transform: scale(0.9);
+      }
+
+      60% {
+        opacity: 1;
+        transform: scale(1.03);
+      }
+
+      80% {
+        transform: scale(0.97);
+      }
+
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
   }
 }
 
